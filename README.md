@@ -1,8 +1,8 @@
 # User manual for 16S RNA analysis pipeline
-Last update: DD/MM/2025
-Created by: Alžbeta Žiarovská, as a part of bachleor's thesis
-Supervised by: Mgr. Martin Blažek
-Bachleor's thesis ID: FIIT-16768-127323
+Last update: DD/MM/2025 <br>
+Created by: Alžbeta Žiarovská, as a part of bachleor's thesis <br>
+Supervised by: Mgr. Martin Blažek <br>
+Bachleor's thesis ID: FIIT-16768-127323 <br>
 ___
 ## About the pipeline
 This pipeline implements a workflow for 16S RNA data analysis. It is written using Nextflow sotware and implements Anaconda distribution for virtual environments and tools used for the processes.
@@ -32,7 +32,7 @@ Parameter configuration: ```nextflow run main.nf --download true```
 ##### data_file
 If params.download is set to value true, the data is downloaded based on a SRR IDs written in a text file.
 
-Example data file: [SRR_Acc_list.txt](https://github.com/alzbetaziarovska/FIIT-16768-127323/SRR_Acc_list.txt)
+Example data file: [SRR_Acc_list.txt](SRR_Acc_list.txt)
 
 Default value: *SRR_Acc_list.txt*
 
