@@ -1,0 +1,177 @@
+Dec-21 18:47:53.285 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -with-conda
+Dec-21 18:47:53.403 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Dec-21 18:47:53.473 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/alzbe/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Dec-21 18:47:53.514 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-21 18:47:53.515 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-21 18:47:53.520 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-21 18:47:53.541 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-21 18:47:53.677 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Dec-21 18:47:53.708 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [zen_gates] DSL2 - revision: 67e5490ca0
+Dec-21 18:47:53.710 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-21 18:47:53.711 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Dec-21 18:47:53.818 [main] DEBUG nextflow.Session - Session UUID: 43f3ab21-9131-4abf-b966-472be4bc812c
+Dec-21 18:47:53.819 [main] DEBUG nextflow.Session - Run name: zen_gates
+Dec-21 18:47:53.820 [main] DEBUG nextflow.Session - Executor pool size: 4
+Dec-21 18:47:53.838 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec-21 18:47:53.850 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-21 18:47:53.898 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (13:27 CEST)
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.17+10-Ubuntu-124.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 8517@DESKTOP-VRPI483 [127.0.1.1]
+  CPUs: 4 - Mem: 7.8 GB (6.5 GB) - Swap: 2 GB (2 GB)
+Dec-21 18:47:53.938 [main] DEBUG nextflow.Session - Work-dir: /home/alzbe/FIIT-16768-127323/work [ext2/ext3]
+Dec-21 18:47:53.940 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/alzbe/FIIT-16768-127323/bin
+Dec-21 18:47:53.966 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-21 18:47:53.983 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-21 18:47:53.992 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Dec-21 18:47:54.036 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec-21 18:47:54.054 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Dec-21 18:47:54.167 [main] DEBUG nextflow.Session - Session start
+Dec-21 18:47:55.098 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-21 18:47:55.119 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/alzbe/.nextflow/secrets/store.json
+Dec-21 18:47:55.135 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4d09cade] - activable => nextflow.secret.LocalSecretsProvider@4d09cade
+Dec-21 18:47:56.099 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.099 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.109 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-21 18:47:56.118 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.8 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Dec-21 18:47:56.123 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Dec-21 18:47:56.178 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'accListDownloadProcess': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.251 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.252 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.253 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'fastqcRaw': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.268 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.268 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.269 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'trimProcess': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.277 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.278 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.279 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'fastqcTrimmed': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.329 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.329 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.330 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'multiqcRaw': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.339 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.339 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.340 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'multiqcTrimmed': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.357 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.357 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.358 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'taxonomyProcess': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.371 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.371 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.373 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'convertProcess': maxForks=0; fair=false; array=0
+Dec-21 18:47:56.398 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-21 18:47:56.399 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-21 18:47:56.405 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'statisticsProcess': maxForks=1; fair=false; array=0
+Dec-21 18:47:56.414 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: trimProcess, fastqcRaw, fastqcTrimmed, multiqcTrimmed, statisticsProcess, taxonomyProcess, multiqcProcess, fastqcProcess, convertProcess, multiqcRaw, accListDownloadProcess
+Dec-21 18:47:56.418 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Dec-21 18:47:56.429 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > accListDownloadProcess
+Dec-21 18:47:56.430 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqcRaw
+Dec-21 18:47:56.435 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trimProcess
+Dec-21 18:47:56.436 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqcTrimmed
+Dec-21 18:47:56.437 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiqcRaw
+Dec-21 18:47:56.437 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiqcTrimmed
+Dec-21 18:47:56.437 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > taxonomyProcess
+Dec-21 18:47:56.437 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > convertProcess
+Dec-21 18:47:56.437 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > statisticsProcess
+Dec-21 18:47:56.441 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_b36a8bedf8e9456c: /home/alzbe/FIIT-16768-127323/modules/trimProcess.nf
+  Script_59af5972c457d689: /home/alzbe/FIIT-16768-127323/modules/accListDownloadProcess.nf
+  Script_31f559c432d6d4ce: /home/alzbe/FIIT-16768-127323/modules/convertProcess.nf
+  Script_7ddea280bc3d67f2: /home/alzbe/FIIT-16768-127323/main.nf
+  Script_ea4f3cb3a3e8e2d4: /home/alzbe/FIIT-16768-127323/modules/fastqcProcess.nf
+  Script_e256f998ef7cac95: /home/alzbe/FIIT-16768-127323/modules/taxonomyProcess.nf
+  Script_dbcb96825151dab9: /home/alzbe/FIIT-16768-127323/modules/statisticsProcess.nf
+  Script_f5d0378c45b49ec5: /home/alzbe/FIIT-16768-127323/modules/multiqcProcess.nf
+Dec-21 18:47:56.441 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec-21 18:47:56.441 [main] DEBUG nextflow.Session - Session await
+Dec-21 18:47:56.599 [Actor Thread 5] INFO  nextflow.conda.CondaCache - Creating env using conda: envs/core-env.yml [cache /home/alzbe/FIIT-16768-127323/work/conda/env-a696208c2da68af0-74a3d877ac8e86b2c85935829ed08b8d]
+Dec-21 18:49:02.445 [Actor Thread 5] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=envs/core-env.yml path=/home/alzbe/FIIT-16768-127323/work/conda/env-a696208c2da68af0-74a3d877ac8e86b2c85935829ed08b8d
+Dec-21 18:49:02.791 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:02.799 [Task submitter] INFO  nextflow.Session - [24/04b387] Submitted process > accListDownloadProcess (2)
+Dec-21 18:49:02.831 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:02.833 [Task submitter] INFO  nextflow.Session - [fa/937f74] Submitted process > accListDownloadProcess (1)
+Dec-21 18:49:02.854 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:02.866 [Task submitter] INFO  nextflow.Session - [0e/c2511f] Submitted process > accListDownloadProcess (3)
+Dec-21 18:49:19.037 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: accListDownloadProcess (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/fa/937f7406e22a20d4f52e17472e460d]
+Dec-21 18:49:19.044 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-21 18:49:19.427 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Dec-21 18:49:19.627 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:19.637 [Task submitter] INFO  nextflow.Session - [f0/2a09cd] Submitted process > fastqcRaw (1)
+Dec-21 18:49:19.705 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:19.706 [Task submitter] INFO  nextflow.Session - [5c/fcf1f8] Submitted process > trimProcess (1)
+Dec-21 18:49:19.995 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: accListDownloadProcess (3); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/0e/c2511f04e5679eb2c422d26ad49930]
+Dec-21 18:49:20.070 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:20.071 [Task submitter] INFO  nextflow.Session - [f0/ebf5dc] Submitted process > trimProcess (2)
+Dec-21 18:49:19.936 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: accListDownloadProcess (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/24/04b38769026671eeba2325e6d117fd]
+Dec-21 18:49:19.963 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:19.981 [Task submitter] INFO  nextflow.Session - [a7/c3ea28] Submitted process > fastqcRaw (2)
+Dec-21 18:49:35.274 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: trimProcess (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/5c/fcf1f88ecc3c6bf0467b25de2211a2]
+Dec-21 18:49:35.327 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:35.328 [Task submitter] INFO  nextflow.Session - [fc/78f4c3] Submitted process > trimProcess (3)
+Dec-21 18:49:35.473 [Actor Thread 3] INFO  nextflow.conda.CondaCache - Creating env using conda: envs/qiime2-env.yml [cache /home/alzbe/FIIT-16768-127323/work/conda/env-91ddb2bd575e65e6-49275eec37c595d06fd2ea6d3d9eeb93]
+Dec-21 18:49:37.202 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: trimProcess (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/f0/ebf5dcffd1cd503876cec8b697d345]
+Dec-21 18:49:37.252 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:37.255 [Task submitter] INFO  nextflow.Session - [d0/de2f45] Submitted process > fastqcRaw (3)
+Dec-21 18:49:43.306 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: fastqcRaw (1); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/f0/2a09cddf39236a4c4e2e2769d9ad24]
+Dec-21 18:49:43.351 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:43.361 [Task submitter] INFO  nextflow.Session - [2b/1ce018] Submitted process > fastqcTrimmed (1)
+Dec-21 18:49:44.787 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: fastqcRaw (2); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/a7/c3ea2808a0088b695353a92722ed81]
+Dec-21 18:49:44.874 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:44.875 [Task submitter] INFO  nextflow.Session - [8f/caef99] Submitted process > fastqcTrimmed (2)
+Dec-21 18:49:59.328 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: trimProcess (3); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/fc/78f4c381936ee425d249d141bc460c]
+Dec-21 18:49:59.596 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-21 18:49:59.603 [Task submitter] INFO  nextflow.Session - [36/42d95d] Submitted process > fastqcTrimmed (3)
+Dec-21 18:50:06.515 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: fastqcRaw (3); status: COMPLETED; exit: 0; error: -; workDir: /home/alzbe/FIIT-16768-127323/work/d0/de2f4542c300b601cf75aa47097ae8]
+Dec-21 18:50:06.659 [Actor Thread 10] INFO  nextflow.conda.CondaCache - Creating env using conda: envs/multiqc-env.yml [cache /home/alzbe/FIIT-16768-127323/work/conda/env-f43f5099505a1a87-0dc333d5e3194ffd2b286337d9bbcd69]
+Dec-21 18:50:09.471 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Dec-21 18:50:09.538 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Dec-21 18:50:09.572 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] multiqcRaw
+  status=ACTIVE
+  port 0: (value) bound ; channel: fastqc_files
+  port 1: (value) bound ; channel: state
+  port 2: (cntrl) -     ; channel: $
+
+[process] multiqcTrimmed
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: fastqc_files
+  port 1: (value) bound ; channel: state
+  port 2: (cntrl) -     ; channel: $
+
+[process] taxonomyProcess
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] convertProcess
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] statisticsProcess
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: tuple_list
+  port 1: (cntrl) -     ; channel: $
+
+Dec-21 18:50:09.592 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec-21 18:50:09.592 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-21 18:50:09.607 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=taxonomyProcess; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Dec-21 18:50:09.615 [Actor Thread 5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=multiqcRaw; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Dec-21 18:50:09.629 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (3)
+Dec-21 18:50:09.645 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill fastqcTrimmed (1) -- command: kill -TERM 9346; exit: 1 
+ bash: line 1: kill: (9346) - No such process
+
+Dec-21 18:50:09.655 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill fastqcTrimmed (2) -- command: kill -TERM 9365; exit: 1 
+ bash: line 1: kill: (9365) - No such process
+
+Dec-21 18:50:09.664 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill fastqcTrimmed (3) -- command: kill -TERM 9554; exit: 1 
+ bash: line 1: kill: (9554) - No such process
+
+Dec-21 18:50:09.676 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=9; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=3; succeedDuration=3m 4s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=0; ]
+Dec-21 18:50:09.702 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec-21 18:50:09.755 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

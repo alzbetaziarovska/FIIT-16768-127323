@@ -1,0 +1,21 @@
+name: statistics-env
+channels:
+  - conda-forge
+  - bioconda
+  - r
+  - defaults
+dependencies:
+  - r-base=4.2.2
+  - bioconductor-phyloseq
+  - r-ggplot2=3.4.2
+  - r-gridextra
+  - bioconductor-biomformat
+  - bioconductor-rhdf5
+  - r-dplyr
+  - r-tidyr
+  - r-rcolorbrewer
+  - r-dendextend
+  - r-vegan
+  - r-pheatmap
+  - r-reshape2
+  - r-ggrepel

@@ -32,7 +32,7 @@ Parameter configuration: ```nextflow run main.nf --download true```
 ##### data_file
 If params.download is set to value true, the data is downloaded based on a SRR IDs written in a text file.
 
-Example data file: [SRR_Acc_list.txt](SRR_Acc_list_70.txt)
+Example data file: [SRR_Acc_list.txt](https://github.com/alzbetaziarovska/FIIT-16768-127323/SRR_Acc_list.txt)
 
 Default value: *SRR_Acc_list.txt*
 
@@ -128,12 +128,10 @@ ___
 ## Example input and output
 
 Input:
-
 [Example input file](SRR_Acc_list.txt)
-[Example input folder](data)
 
 Output:
-[Example output folder](results)
+[Example output folder](example_results)
 
 ___
 ## References
